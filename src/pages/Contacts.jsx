@@ -6,7 +6,7 @@ const Contacts = () => {
     <section>
       <h1>Contacts</h1>
 
-      <Link to="/contacts-edit" className="button">
+      <Link to="/contatos-editar" className="button">
         edit contacts
       </Link>
     </section>

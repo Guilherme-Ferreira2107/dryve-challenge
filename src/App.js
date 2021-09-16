@@ -12,6 +12,7 @@ import ContactsEdit from "./pages/ContactsEdit";
 
 import Header from "./components/header";
 import Menu from "./components/menu";
+import NoMatch from "./pages/NotMatch";
 
 const App = () => {
   return (
@@ -22,8 +23,9 @@ const App = () => {
         <Router>
           <Switch>
             <Route exact path="/" component={Dashboard} />
-            <Route exact path="/contacts" component={Contacts} />
-            <Route exact path="/contacts-edit" component={ContactsEdit} />
+            <Route exact path="/contatos" component={Contacts} />
+            <Route exact path="/contatos-editar" component={ContactsEdit} />
+            <Route path="*" component={NoMatch} />
             <Redirect to="/" />
           </Switch>
         </Router>

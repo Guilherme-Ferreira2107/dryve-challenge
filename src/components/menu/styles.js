@@ -16,8 +16,7 @@ export const Wrapper = styled.div`
   background: #ffffff;
   box-shadow: inset -1px 0px 0px #efefef;
 
-  transition: all 0.3s;
-
+  /* MENU EXPANDIDO */
   &.expanded {
     width: 280px;
 
@@ -27,34 +26,14 @@ export const Wrapper = styled.div`
 
     .control-menu {
       transition: all 0.3s;
+
       img {
         transform: rotate(0deg);
       }
     }
   }
 
-  &::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-    border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  &::-webkit-scrollbar:hover {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    border: 2px solid transparent;
-    box-shadow: inset 0 0 0 12px rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
-  }
-
-  &::-webkit-scrollbar-thumb:active {
-    box-shadow: inset 0 0 0 12px rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
-  }
-
+  /* NAVBAR */
   nav ul li {
     margin-bottom: 8px;
   }
@@ -100,6 +79,7 @@ export const Wrapper = styled.div`
     }
   }
 
+  /* BOTÃO PARA ABRIR E FECHAR MENU */
   .control-menu {
     display: flex;
     justify-content: flex-end;
@@ -124,5 +104,28 @@ export const Wrapper = styled.div`
         background: rgba(0, 0, 0, 0.12);
       }
     }
+  }
+
+  /* SCROLL PERSONALIZADO */
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    box-shadow: inset 0 0 0 12px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    box-shadow: inset 0 0 0 12px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
   }
 `;

@@ -6,7 +6,7 @@ const Dashboard = () => (
     <h1>Dashboard</h1>
     <p>This is the dashboard.</p>
 
-    <Link to="/contacts" className="button">
+    <Link to="/contatos" className="button">
       View contacts
     </Link>
   </section>
