@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import { MenuItem, Select } from "@material-ui/core";
 
@@ -13,6 +13,11 @@ import imageUser from "../../assets/icons/imageUser.png";
 const Header = () => {
   const classes = useStyles();
   const username = "Frederico Boeri";
+  const [hasNotification, setHasNotification] = useState(true);
+
+  const enableNotify = () => {
+    setHasNotification(!hasNotification);
+  };
 
   return (
     <Wrapper>
@@ -39,7 +44,10 @@ const Header = () => {
       </div>
       <div className="col-flex">
         <div>
-          <button onClick={console.info()}>
+          <button
+            onClick={enableNotify}
+            className={hasNotification ? "activeNotify" : ""}
+          >
             <img src={notification} alt="Notificações" />
           </button>
         </div>

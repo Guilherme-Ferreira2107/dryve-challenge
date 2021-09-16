@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { makeStyles } from "@material-ui/core";
+
 import iconArrow from "../../assets/icons/arrow.png";
+import iconActiveNotify from "../../assets/icons/notfication-active.png";
 
 export const Wrapper = styled.header`
   display: flex;
@@ -41,6 +43,25 @@ export const Wrapper = styled.header`
     height: 32px;
 
     margin-right: 9.53px;
+  }
+
+  .activeNotify {
+    position: relative;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      right: 0;
+      top: 0;
+      margin: 5px 8px 0 0;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      background-image: url(${iconActiveNotify});
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
   .image-user {
