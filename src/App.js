@@ -6,13 +6,13 @@ import {
   Redirect,
 } from "react-router-dom";
 
-import Dashboard from "./pages/Dashboard";
-import Contacts from "./pages/Contacts";
-import ContactsEdit from "./pages/ContactsEdit";
-
 import Header from "./components/header";
 import Menu from "./components/menu";
-import NoMatch from "./pages/NotMatch";
+
+import Dashboard from "./pages/Dashboard/Dashboard";
+import Contacts from "./pages/Contacts/Contacts";
+import ContactsEdit from "./pages/Contacts/ContactsEdit";
+import NoMatch from "./pages/NoMatch/NotMatch";
 
 const App = () => {
   return (

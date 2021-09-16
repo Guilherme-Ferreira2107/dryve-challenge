@@ -2,14 +2,12 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
-
-  height: calc(100vh - 130px);
-
-  overflow: auto;
-
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: space-between;
+  height: calc(100vh - 130px);
+  overflow: auto;
   z-index: 1;
 
   padding: 24px;
@@ -104,28 +102,5 @@ export const Wrapper = styled.div`
         background: rgba(0, 0, 0, 0.12);
       }
     }
-  }
-
-  /* SCROLL PERSONALIZADO */
-  &::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-    border-radius: 12px;
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  &::-webkit-scrollbar:hover {
-    background-color: rgba(0, 0, 0, 0);
-  }
-
-  &::-webkit-scrollbar-thumb {
-    border: 2px solid transparent;
-    box-shadow: inset 0 0 0 12px rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
-  }
-
-  &::-webkit-scrollbar-thumb:active {
-    box-shadow: inset 0 0 0 12px rgba(0, 0, 0, 0.12);
-    border-radius: 12px;
   }
 `;
