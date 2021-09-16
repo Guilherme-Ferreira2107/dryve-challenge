@@ -13,4 +13,15 @@ body {
 
 a {
   text-decoration: none;
+  color: #1d2c4b;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container-main {
+  display: flex;
 }

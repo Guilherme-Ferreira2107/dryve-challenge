@@ -5,6 +5,7 @@ import iconArrow from "../../assets/icons/arrow.png";
 import iconActiveNotify from "../../assets/icons/notfication-active.png";
 
 export const Wrapper = styled.header`
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -13,6 +14,8 @@ export const Wrapper = styled.header`
   padding: 20px 24px;
   background: #ffffff;
   box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
+
+  z-index: 2;
 
   @media (max-width: 450px) {
     padding: 14px;

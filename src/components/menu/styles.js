@@ -1,0 +1,128 @@
+import styled from "styled-components";
+
+export const Wrapper = styled.div`
+  position: relative;
+
+  height: calc(100vh - 130px);
+
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+
+  padding: 24px;
+  background: #ffffff;
+  box-shadow: inset -1px 0px 0px #efefef;
+
+  transition: all 0.3s;
+
+  &.expanded {
+    width: 280px;
+
+    nav ul li button span {
+      display: initial;
+    }
+
+    .control-menu {
+      transition: all 0.3s;
+      img {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: 2px solid transparent;
+    box-shadow: inset 0 0 0 12px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    box-shadow: inset 0 0 0 12px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+  }
+
+  nav ul li {
+    margin-bottom: 8px;
+  }
+
+  nav ul li button {
+    transition: all 0.3s;
+    width: 100%;
+    padding: 11px;
+    background: #ffffff;
+    border-radius: 6px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  nav ul li button span {
+    display: none;
+    transition: all 0.3s;
+    position: relative;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.025em;
+    vertical-align: super;
+    margin-left: 11px;
+  }
+
+  li img {
+    filter: brightness(0) invert(0);
+  }
+
+  li button:hover,
+  .menu-active {
+    background: #0065ff;
+
+    img {
+      filter: brightness(0) invert(1);
+    }
+
+    span {
+      color: #ffffff;
+    }
+  }
+
+  .control-menu {
+    display: flex;
+    justify-content: flex-end;
+    transition: all 0.3s;
+
+    button {
+      cursor: pointer;
+      border: none;
+      background: transparent;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+
+      img {
+        transition: all 0.3s;
+        margin: auto;
+        transform: rotate(180deg);
+      }
+
+      &:active,
+      &:hover {
+        background: rgba(0, 0, 0, 0.12);
+      }
+    }
+  }
+`;

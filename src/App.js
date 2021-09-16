@@ -17,15 +17,17 @@ const App = () => {
   return (
     <>
       <Header />
-      <Menu />
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Dashboard} />
-          <Route exact path="/contacts" component={Contacts} />
-          <Route exact path="/contacts-edit" component={ContactsEdit} />
-          <Redirect to="/" />
-        </Switch>
-      </Router>
+      <div className="container-main">
+        <Menu />
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Dashboard} />
+            <Route exact path="/contacts" component={Contacts} />
+            <Route exact path="/contacts-edit" component={ContactsEdit} />
+            <Redirect to="/" />
+          </Switch>
+        </Router>
+      </div>
     </>
   );
 };
