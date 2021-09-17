@@ -1,13 +1,15 @@
 import React from "react";
 
-import { ContentsLeft, ContentsRow, ListLeads, Wrapper } from "./styles";
+import { ContentsLeft, ContentsRow, ListLeads, Title, Wrapper } from "./styles";
 
 const LeadsComponents = ({ data }) => {
   return (
     <Wrapper className="container-cards">
-      <h5>
-        Leads por portal {"("}últimos 30 dias{")"}
-      </h5>
+      <Title>
+        <h5>
+          Leads por portal {"("}últimos 30 dias{")"}
+        </h5>
+      </Title>
       <ListLeads>
         {data.map((item, idx) => {
           return (

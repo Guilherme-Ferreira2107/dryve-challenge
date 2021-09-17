@@ -1,27 +1,40 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 260px;
-  min-width: 260px;
+  width: 100%;
 
   &.container-cards {
-    padding-right: 0px;
-    padding-bottom: 0px;
+    padding: 0px;
+  }
+`;
+
+export const Title = styled.div`
+  h5 {
+    padding: 24px 0 24px 12px;
   }
 `;
 
 export const ListLeads = styled.div`
-  max-height: 370px;
+  max-height: 340px;
+  padding-left: 12px;
   overflow: scroll;
+
+  @media (min-width: 1430px) {
+    max-height: 350px;
+  }
 `;
 
 export const ContentsRow = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 8px 8px 0px;
+  padding: 4px 8px 4px 0px;
   border-bottom: 1px solid #efefef;
   max-height: 48px;
+
+  &:first-child {
+    padding-top: 0px;
+  }
 
   span {
     font-style: normal;

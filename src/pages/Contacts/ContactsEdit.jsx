@@ -5,8 +5,8 @@ const ContactsEdit = () => {
   return (
     <section>
       <h1>Contacts Edit</h1>
-      <Link to="/" className="button">
-        Voltar para Dashboard
+      <Link to="/contatos" className="button">
+        Voltar para Contato
       </Link>
     </section>
   );

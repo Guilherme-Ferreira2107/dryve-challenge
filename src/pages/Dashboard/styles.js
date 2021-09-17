@@ -9,11 +9,6 @@ export const Wrapper = styled.section`
   background-color: #e5e5e5;
 `;
 
-export const SecondRow = styled.div`
-  display: flex;
-  margin-bottom: 24px;
-`;
-
 export const ListCars = styled.div`
   position: relative;
 `;
