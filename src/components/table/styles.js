@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   width: 100%;
   margin-top: 24px;
+  overflow: auto;
 
   &.c-container-cards {
     padding: 0;

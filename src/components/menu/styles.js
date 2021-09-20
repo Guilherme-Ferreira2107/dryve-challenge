@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-between;
   height: calc(100vh - 130px);
+  min-width: 50px;
   overflow: auto;
   z-index: 1;
 
@@ -15,17 +16,17 @@ export const Wrapper = styled.div`
   box-shadow: inset -1px 0px 0px #efefef;
 
   /* MENU EXPANDIDO */
-  &.expanded {
-    width: 280px;
+  @media (min-width: 450px) {
+    min-width: 50px;
 
-    nav ul li button span {
-      display: initial;
-    }
+    &.expanded {
+      min-width: 280px;
 
-    .control-menu {
-      transition: all 0.3s;
+      nav ul li button span {
+        display: initial;
+      }
 
-      img {
+      .menu-rotate {
         transform: rotate(0deg);
       }
     }
@@ -76,31 +77,30 @@ export const Wrapper = styled.div`
       color: #ffffff;
     }
   }
+`;
 
-  /* BOTÃO PARA ABRIR E FECHAR MENU */
-  .control-menu {
-    display: flex;
-    justify-content: flex-end;
-    transition: all 0.3s;
+export const ControlMenu = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  transition: all 0.3s;
 
-    button {
-      cursor: pointer;
-      border: none;
-      background: transparent;
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
+  button {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 
-      img {
-        transition: all 0.3s;
-        margin: auto;
-        transform: rotate(180deg);
-      }
+    img {
+      transition: all 0.3s;
+      margin: auto;
+      transform: rotate(180deg);
+    }
 
-      &:active,
-      &:hover {
-        background: rgba(0, 0, 0, 0.12);
-      }
+    &:active,
+    &:hover {
+      background: rgba(0, 0, 0, 0.12);
     }
   }
 `;

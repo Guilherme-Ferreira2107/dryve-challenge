@@ -1,7 +1,5 @@
 import React from "react";
 
-import { Grid } from "@material-ui/core";
-
 import filterIcon from "../../assets/icons/filter.png";
 import filterPlus from "../../assets/icons/plus.png";
 
@@ -21,12 +19,12 @@ const Contacts = () => {
   return (
     <Wrapper>
       <Header>
-        <Grid container alignItems="center" alignContent="center">
+        <div className="c-d-flex">
           <h3>Contatos</h3>
           <Search>
             <input type="text" placeholder="Buscar..." />
           </Search>
-        </Grid>
+        </div>
         <ContentsFilters>
           <FilterBtn>
             <button>

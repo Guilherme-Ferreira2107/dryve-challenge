@@ -21,12 +21,20 @@ export const Header = styled.div`
   align-content: center;
   align-items: center;
 
+  .c-d-flex {
+    align-items: center;
+  }
+
   h3 {
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height: 100%;
     letter-spacing: -0.025em;
+  }
+
+  @media (max-width: 450px) {
+    flex-wrap: wrap;
   }
 `;
 
@@ -40,7 +48,6 @@ export const Search = styled.div`
     box-sizing: border-box;
     border-radius: 6px;
     min-width: 275px;
-    margin-left: 16px;
   }
 
   input[type="text"],
@@ -66,6 +73,12 @@ export const Search = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     z-index: 5;
+  }
+
+  @media (min-width: 450px) {
+    input[type="text"] {
+      margin-left: 16px;
+    }
   }
 `;
 

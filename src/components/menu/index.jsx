@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 
 import closeMenu from "../../assets/icons/menu-closed.png";
+
 import { listMenus } from "../../mocks/menu.mock";
 
-import { Wrapper } from "./styles";
+import { Wrapper, ControlMenu } from "./styles";
 
 const Menu = () => {
   const [activeMenuId, setActiveMenuId] = useState(0);
   const [menuExpanded, setMenuExpanded] = useState(true);
-  let slug = window.location;
+  const slug = window.location;
 
   useEffect(() => {
     listMenus.map((item, idx) => {
@@ -37,11 +38,11 @@ const Menu = () => {
           })}
         </ul>
       </nav>
-      <div className="control-menu">
+      <ControlMenu>
         <button onClick={() => setMenuExpanded(!menuExpanded)}>
-          <img src={closeMenu} alt="" />
+          <img src={closeMenu} alt="" className="menu-rotate" />
         </button>
-      </div>
+      </ControlMenu>
     </Wrapper>
   );
 };
