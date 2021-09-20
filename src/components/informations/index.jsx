@@ -14,7 +14,8 @@ import { useForm } from "react-hook-form";
 
 import filterPlus from "../../assets/icons/plus-blue.png";
 
-import { FormEdit, AddBtn, InputSend } from "./styles";
+import { FormEdit, InputSend } from "./styles";
+import ButtonComponent from "../button";
 
 const Informations = () => {
   const { register, handleSubmit } = useForm();
@@ -326,12 +327,7 @@ const Informations = () => {
       </Grid>
 
       <h2>Tags</h2>
-      <AddBtn>
-        <button>
-          <img src={filterPlus} alt="" />
-          <span>Adicionar</span>
-        </button>
-      </AddBtn>
+      <ButtonComponent text="Adicionar" srcUrlImage={filterPlus} />
 
       <InputSend>
         <input type="submit" value="Salvar" />
