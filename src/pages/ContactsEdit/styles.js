@@ -25,14 +25,29 @@ export const Wrapper = styled.section`
     }
   }
 
-  .container-cards {
+  .c-container-cards {
     margin-bottom: 10px;
     padding: 0;
   }
 
-  .cols-right {
-    padding-top: 0;
-    padding-bottom: 0;
+  .cols-left {
+    width: 47.5%;
+    margin: 0 16px;
+  }
+`;
+
+export const ColsLeft = styled.div`
+  width: 47.5%;
+  margin: 0 16px;
+`;
+
+export const ColsRight = styled.div`
+  width: 47.5%;
+  margin: 0 16px;
+
+  .c-container-cards {
+    width: 100%;
+    min-height: 230px;
   }
 `;
 
@@ -161,6 +176,98 @@ export const InputSend = styled.div`
     background: #0065ff;
     border: 1px solid #0065ff;
     cursor: pointer;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: calc(100% + 32px);
+    height: 1px;
+    background: #efefef;
+    left: 0;
+    top: 0;
+    margin-left: -16px;
+  }
+`;
+
+export const ImageCar = styled.div`
+  border-radius: 4px;
+  filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 0.08));
+`;
+
+export const ColumnInfos = styled.div`
+  span,
+  p {
+    margin: 5px;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: -0.025em;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    span {
+      color: #0065ff;
+    }
+  }
+`;
+
+export const Divisor = styled.div`
+  width: 3px;
+  height: 3px;
+  background: #a3a3a3;
+  border-radius: 50%;
+`;
+
+export const InputSendBuy = styled.div`
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: -32px;
+  padding: 16px 16px 0px;
+
+  p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #0065ff;
+    margin: 10px 16px 0 0;
+  }
+
+  button {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: -0.025em;
+    border-radius: 6px;
+    padding: 12px;
+    color: #0065ff;
+    background: #fff;
+    border: 1px solid #0065ff;
+    cursor: pointer;
+
+    span {
+      margin-left: 11px;
+    }
   }
 
   &:before {

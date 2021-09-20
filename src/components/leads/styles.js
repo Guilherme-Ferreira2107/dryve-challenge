@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   width: 100%;
 
-  &.container-cards {
+  &.c-container-cards {
     padding: 0px;
   }
 `;

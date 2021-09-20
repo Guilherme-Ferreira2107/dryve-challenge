@@ -51,7 +51,7 @@ const Contacts = () => {
       </Header>
 
       {/*** TABLE WITH PAGINATION ***/}
-      <TableContacts className="container-cards">
+      <TableContacts className="c-container-cards">
         <table>
           <thead>
             <tr className="theader">

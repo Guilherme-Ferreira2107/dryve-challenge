@@ -114,7 +114,7 @@ export const TableContacts = styled.div`
   width: 100%;
   margin-top: 24px;
 
-  &.container-cards {
+  &.c-container-cards {
     padding: 0;
   }
 

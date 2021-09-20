@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  &.container-cards {
+  &.c-container-cards {
     padding-left: 0;
     padding-right: 0;
   }

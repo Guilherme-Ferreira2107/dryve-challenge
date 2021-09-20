@@ -107,7 +107,7 @@ const GraphicComponents = () => {
   };
 
   return (
-    <Wrapper className="container-cards">
+    <Wrapper className="c-container-cards">
       <h5>
         Leads {"("}últimos 30 dias{")"}
       </h5>

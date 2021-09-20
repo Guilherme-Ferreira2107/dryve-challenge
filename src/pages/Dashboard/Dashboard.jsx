@@ -23,7 +23,7 @@ const Dashboard = () => {
         </Grid>
       </Grid>
       <ListCars>
-        <Grid container spacing={3} className="mt-16">
+        <Grid container spacing={3} className="c-mt-16">
           <Grid item sm={12} md={6}>
             <ListCarsComponents
               title="Test-drives vencidos"

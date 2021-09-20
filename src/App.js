@@ -18,7 +18,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <div className="container-main">
+      <div className="c-d-flex">
         <Menu />
         <Router>
           <Switch>

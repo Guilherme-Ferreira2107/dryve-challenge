@@ -14,7 +14,7 @@ import {
 
 const ListCarsComponents = ({ title, data }) => {
   return (
-    <Wrapper className="container-cards">
+    <Wrapper className="c-container-cards">
       <Title>
         <h5>{title}</h5>
       </Title>

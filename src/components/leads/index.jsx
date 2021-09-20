@@ -4,7 +4,7 @@ import { ContentsLeft, ContentsRow, ListLeads, Title, Wrapper } from "./styles";
 
 const LeadsComponents = ({ data }) => {
   return (
-    <Wrapper className="container-cards">
+    <Wrapper className="c-container-cards">
       <Title>
         <h5>
           Leads por portal {"("}últimos 30 dias{")"}
