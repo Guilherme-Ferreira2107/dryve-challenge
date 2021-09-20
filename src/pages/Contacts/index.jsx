@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Grid } from "@material-ui/core";
+import { useHistory } from "react-router-dom";
 
 import filterIcon from "../../assets/icons/filter.png";
 import filterPlus from "../../assets/icons/plus.png";
@@ -17,8 +18,10 @@ import {
 import { contactsMock } from "../../mocks/contacts.mock";
 
 const Contacts = () => {
+  let history = useHistory();
+
   const redirect = (id) => {
-    console.info(id);
+    history.push("/contatos-editar?id=" + id);
   };
 
   return (

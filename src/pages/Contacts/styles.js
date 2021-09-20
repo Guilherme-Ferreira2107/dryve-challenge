@@ -7,6 +7,12 @@ export const Wrapper = styled.section`
   width: 100%;
   padding: 31px 24px;
   background-color: #e5e5e5;
+
+  button {
+    &:active {
+      filter: brightness(0.9);
+    }
+  }
 `;
 
 export const Header = styled.div`
@@ -80,10 +86,6 @@ export const ContentsFilters = styled.div`
     padding: 12px 16px;
     height: 36px;
     cursor: pointer;
-
-    &:active {
-      filter: brightness(0.9);
-    }
 
     span {
       margin-left: 11px;
