@@ -1,9 +1,10 @@
 import React from "react";
+import { Wrapper } from "./styles";
 
 const NoMatch = () => (
-  <section>
+  <Wrapper>
     <h1>Página não encontrada.</h1>
-  </section>
+  </Wrapper>
 );
 
 export default NoMatch;

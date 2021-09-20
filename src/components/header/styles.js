@@ -69,6 +69,7 @@ export const Wrapper = styled.header`
 
   .image-user {
     position: relative;
+    margin-left: 16px;
 
     &:after {
       content: "";

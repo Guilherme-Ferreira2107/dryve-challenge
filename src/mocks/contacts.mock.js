@@ -1,0 +1,67 @@
+export const contactsMock = {
+  dataBody: [
+    {
+      id: "01",
+      initials: "RM",
+      name: "Renata Silva Medeiros",
+      email: "re.medeiros@uol.com.br",
+      phone: "(16) 99873-2219",
+    },
+    {
+      id: "02",
+      initials: "EO",
+      name: "Eduardo Rocha Oliveira",
+      email: "eduardorocha@hotmail.com",
+      phone: "(16) 99627-0092",
+    },
+    {
+      id: "03",
+      initials: "PM",
+      name: "Paulo Mendes",
+      email: "paulo@mendesconsultoria.com.br",
+      phone: "(16) 99887-0126",
+    },
+    {
+      id: "04",
+      initials: "PG",
+      name: "Pedro Gandra",
+      email: "pedrogandra@gmail.com",
+      phone: "(16) 99610-4666",
+    },
+    {
+      id: "05",
+      initials: "TA",
+      name: "Tatiana Alves",
+      email: "tati.alves@globo.com",
+      phone: "(16) 99876-4251",
+    },
+    {
+      id: "06",
+      initials: "MS",
+      name: "Mario Augusto dos Santos",
+      email: "marioaugusto.santos@gmail.com",
+      phone: "(16) 99654-0045",
+    },
+    {
+      id: "07",
+      initials: "AS",
+      name: "Alice Rocha Silva",
+      email: "alicerocha@outlook.com",
+      phone: "(16) 99678-6711",
+    },
+    {
+      id: "08",
+      initials: "TC",
+      name: "Thiago Costa",
+      email: "thicosta@uol.com.br",
+      phone: "(16) 99726-9811",
+    },
+    {
+      id: "09",
+      initials: "TC",
+      name: "Thiago Costa",
+      email: "thicosta@uol.com.br",
+      phone: "(16) 99726-9811",
+    },
+  ],
+};
