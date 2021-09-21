@@ -41,7 +41,9 @@ const Contacts = () => {
         </ContentsFilters>
       </Header>
 
-      <TableComponent data={contactsMock} />
+      <div className="container-table">
+        <TableComponent data={contactsMock} />
+      </div>
     </Wrapper>
   );
 };
