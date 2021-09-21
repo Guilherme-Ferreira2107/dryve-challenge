@@ -2,6 +2,13 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   position: relative;
+  width: 100%;
+`;
+
+export const ColsLeft = styled.div`
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 export const ImageCar = styled.div`
@@ -52,7 +59,7 @@ export const InputSendBuy = styled.div`
   position: relative;
   display: flex;
   justify-content: flex-end;
-  padding: 16px 16px 0px;
+  padding: 16px 16px 10px;
 
   p {
     font-family: "Inter";

@@ -7,6 +7,7 @@ export const Wrapper = styled.section`
   width: 100%;
   padding: 31px 24px;
   background-color: #e5e5e5;
+  margin-top: 80px;
 
   button {
     &:active {
@@ -42,6 +43,7 @@ export const Search = styled.div`
   position: relative;
 
   input[type="text"] {
+    position: relative;
     background: #ffffff;
     padding: 12px;
     border: 1px solid #d1d1d1;

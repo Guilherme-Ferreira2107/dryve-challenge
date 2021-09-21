@@ -15,10 +15,10 @@ const Dashboard = () => {
       <h1>Resumo</h1>
       <CardComponents data={dashboardMock.cards} />
       <Grid container spacing={3}>
-        <Grid item sm={12} md={9}>
+        <Grid item sm={12} md={8}>
           <GraphicComponents />
         </Grid>
-        <Grid item sm={12} md={3}>
+        <Grid item sm={12} md={4}>
           <LeadsComponents data={dashboardMock.leads} />
         </Grid>
       </Grid>

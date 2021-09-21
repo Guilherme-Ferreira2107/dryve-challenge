@@ -9,8 +9,9 @@ export const Wrapper = styled.div`
   height: calc(100vh - 130px);
   min-width: 50px;
   overflow: auto;
-  z-index: 1;
+  z-index: 2;
 
+  margin-top: 80px;
   padding: 24px;
   background: #ffffff;
   box-shadow: inset -1px 0px 0px #efefef;

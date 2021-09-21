@@ -8,6 +8,7 @@ export const Wrapper = styled.section`
   width: 100%;
   padding: 31px 24px;
   background-color: #e5e5e5;
+  margin-top: 80px;
 
   h2 {
     font-style: normal;
@@ -34,15 +35,19 @@ export const Wrapper = styled.section`
     width: 47.5%;
     margin: 0 16px;
   }
+
+  .c-d-flex {
+    flex-wrap: wrap;
+  }
 `;
 
 export const ColsLeft = styled.div`
-  width: 47.5%;
+  width: 100%;
   margin: 0 16px;
 `;
 
 export const ColsRight = styled.div`
-  width: 47.5%;
+  width: 100%;
   margin: 0 16px;
 
   .c-container-cards {

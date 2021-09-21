@@ -12,6 +12,7 @@ import Opportunities from "../../components/opportunities";
 import TitleComponent from "../../components/title";
 
 import { Wrapper, Header, ColsRight, ColsLeft } from "./styles";
+import { Grid } from "@material-ui/core";
 
 const ContactsEdit = () => {
   return (
@@ -23,18 +24,23 @@ const ContactsEdit = () => {
         <h3>Editar Contato</h3>
       </Header>
 
-      <div className="c-d-flex">
-        <ColsLeft className="c-container-cards">
-          <TitleComponent value="Informações" />
-          <Informations />
-        </ColsLeft>
-        <ColsRight>
-          <BuyIntention />
-          <SellIntention />
-          <Adverts />
-          <Opportunities />
-        </ColsRight>
-      </div>
+      <Grid container spacing={3}>
+        <Grid item xs={12} sm={12} lg={6}>
+          <ColsLeft className="c-container-cards">
+            <TitleComponent value="Informações" />
+            <Informations />
+          </ColsLeft>
+        </Grid>
+
+        <Grid item xs={12} sm={12} lg={6}>
+          <ColsRight>
+            <BuyIntention />
+            <SellIntention />
+            <Adverts />
+            <Opportunities />
+          </ColsRight>
+        </Grid>
+      </Grid>
     </Wrapper>
   );
 };
