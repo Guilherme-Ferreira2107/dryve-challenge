@@ -17,10 +17,10 @@ import NoMatch from "./pages/NoMatch/NotMatch";
 const App = () => {
   return (
     <>
-      <Header />
       <div className="c-d-flex">
-        <Menu />
         <Router>
+          <Header />
+          <Menu />
           <Switch>
             <Route exact path="/" component={Dashboard} />
             <Route exact path="/contatos" component={Contacts} />

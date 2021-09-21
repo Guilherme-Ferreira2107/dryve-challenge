@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 import closeMenu from "../../assets/icons/menu-closed.png";
 
@@ -24,7 +25,7 @@ const Menu = () => {
           {listMenus.map((item, idx) => {
             return (
               <li key={idx}>
-                <a href={item.link}>
+                <Link to={item.link}>
                   <button
                     onClick={() => setActiveMenuId(idx)}
                     className={idx === activeMenuId ? "menu-active" : ""}
@@ -32,7 +33,7 @@ const Menu = () => {
                     <img src={item.icon} alt={item.title} />
                     <span>{item.title}</span>
                   </button>
-                </a>
+                </Link>
               </li>
             );
           })}
