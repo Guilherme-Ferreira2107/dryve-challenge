@@ -10,12 +10,6 @@ export const Wrapper = styled.section`
   padding: 31px 24px;
   margin-top: 80px;
   overflow: scroll;
-
-  button {
-    &:active {
-      filter: brightness(0.9);
-    }
-  }
 `;
 
 export const Header = styled.div`
