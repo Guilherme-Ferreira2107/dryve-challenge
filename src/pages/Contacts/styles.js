@@ -4,10 +4,12 @@ import searchIcon from "../../assets/icons/search.png";
 
 export const Wrapper = styled.section`
   position: relative;
-  width: 100%;
-  padding: 31px 24px;
   background-color: #e5e5e5;
+  width: 100%;
+  height: calc(100vh - 142px);
+  padding: 31px 24px;
   margin-top: 80px;
+  overflow: scroll;
 
   button {
     &:active {

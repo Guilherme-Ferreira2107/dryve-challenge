@@ -6,9 +6,11 @@ import search from "../../assets/icons/search.png";
 export const Wrapper = styled.section`
   position: relative;
   width: 100%;
+  height: calc(100vh - 142px);
   padding: 31px 24px;
   background-color: #e5e5e5;
   margin-top: 80px;
+  overflow: auto;
 
   h2 {
     font-style: normal;
